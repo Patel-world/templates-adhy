@@ -1,0 +1,14 @@
+{% include 'learning_logs/base0.html' %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+{% block header %}
+    <h2>upload assignment:</h2>
+{% endblock header %}
+{% block content %}
+    <form action="{% url 'index' %}" method='post' class="form">
+        {% csrf_token %}
+        <input type="text">
+        <input id="id_image" type="file" class="" name="image">
+        <button name="submit" class="btn btn-primary">add topic</button>
+    </form>
+{% endblock content %}

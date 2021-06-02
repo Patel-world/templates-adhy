@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DSTL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-sm-9 div {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
+  {
+      -webkit-text-stroke-width: thin;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+  body {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.428571;
+    color: #333;
+    background-color: ghostwhite;
+}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Boolean Algebra</a></li>
+        <li><a href="#section2">Example</a></li>
+       <!-- <li><a href="#section3">Section 3</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Section 4-1</a></li>
+            <li><a href="#section42">Section 4-2</a></li>
+          </ul>
+        </li>//-->
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">
+        <h1>Function</h1>
+        <p>
+            A binary relation R from A to B is said to be a function if ∀ a ∈ A, ∃ a unique element b ∈ B such that ( a, b ) ∈ R.
+[ ( a, b ) ∈ R can be written as R (a) = b ]
+Set A is called domain & B is called range of the function R.
+
+          <ol>
+              <li>&ensp;[Commutativity]: x ⋁ y = y ⋁ x <br>  &emsp;  &emsp; &emsp;&emsp; &emsp;&emsp; & x ⋀ y = y ⋀ x
+              </li>
+          <li>&ensp;[Distributive]: x ⋁ (y ⋀ z) = (x ⋁ y) ⋀ (x ⋁ z)<br>  &emsp;&emsp; &emsp;&emsp; &emsp;& x ⋀ (y ⋁ z) = (x ⋀ y) ⋁ (x ⋀ z)
+          </li>
+          <li>&ensp;[Identity element]: There exists element 0, 1 ∈ S such that<br>&emsp;&emsp; &emsp;&emsp; &emsp;&emsp;&emsp;&ensp;&ensp; x ⋁ 0 = x <br>&ensp;&emsp;&ensp;&emsp;&emsp; &emsp;&emsp; &emsp; & x ⋀ 1 = x</li>
+          <li>&ensp;[Inverse]: x ⋁ ¬ x = 1<br>&emsp;&emsp;&emsp;&emsp;& x ⋀ ¬ x = 0</li>
+      </ol>
+        </p>
+      </div>
+      <div id="section2">
+        <h1>Example</h1>
+          <ol>
+              <li>Let S be a non empty set then P(s) is a Boolean algebra with ⋁ = ∪, ⋀ = ∩, ¬ A = A<sup>c</sup>, 0 = p and 1 = S. This is called the power set Boolean algebera. So we have Boolean algebra of finite size  as well as uncountable size.</li>
+              <li>Take D(30) = {n ∈ N : n|30} with a ⋁ b = LCM(a, b)
+                  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&ensp;a ⋀ b = GCD(a, b)
+                  <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&&emsp;&emsp;&emsp;¬ a = 30/a<br>It is a Boolean algebra with 0 = 1 & 1 = 30
+              </li>
+          </ol>
+      </div>
+      <!--<div id="section3">
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section41">
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section42">
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>//-->
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

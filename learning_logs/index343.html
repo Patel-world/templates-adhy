@@ -1,0 +1,48 @@
+{% extends 'learning_logs/base0.html' %}
+
+{% block content %}
+    <main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Adhyapna</h1>
+        <p class="lead text-muted">Keep track on learning<br>with some udemy courses that are free for limited time. </p>
+        <p>
+          <p class="lead text-muted">Like our work!</p>
+          <center><a href="https://www.instamojo.com/@adhyapna/le094f234829c4ba19eb570933a41827f/" rel="im-checkout" data-text="Buy us Coffee" data-css-style="color:#b80000; background:#fad0c3; width:180px; border-radius:4px"   data-layout="vertical"></a></center>
+<script src="https://js.instamojo.com/v1/button.js"></script>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row" style="display: flex">
+        {% for blog in projects %}
+            <div class="card" style="width: 21rem;">
+                <img style="height: 200px; width: 100%; object-fit: cover;" src="{{ blog.image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ blog.txt }}</h5>
+                    <p class="card-text">{{ blog.instructor }}</p>
+                    <p class="card-text">{{ blog.rating }}</p>
+                    <p class="card-text">{{ blog.duration }}</p>
+                    <a href="{{ blog.url }}" target="_blank" class="stretched-link"></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+      </div>
+    </div>
+  </div>
+</main>
+    <style>
+        .card {
+            margin-right: 15px;
+            margin-bottom: 15px
+        }
+    </style>
+{% endblock content %}
