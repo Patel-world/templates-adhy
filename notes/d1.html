@@ -1,0 +1,987 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+
+.st4 {
+    font-family: unset;
+}
+span.cls_013 {
+    font-family: Arial,serif;
+    font-size: 16.0px;
+    color: darkblue;
+    background-color: paleturquoise;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+span.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(126,126,126);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(126,126,126);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Courier New,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Courier New,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:16.0px;color:rgb(63,63,63);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_018{font-family:Arial,serif;font-size:16.0px;color:rgb(63,63,63);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:16.0px;color:rgb(68,83,106);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:16.0px;color:rgb(68,83,106);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:18.1px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_019{font-family:Arial,serif;font-size:18.1px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:12.1px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:12.1px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:16.3px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:16.3px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_020{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:16.0px;color:rgb(63,63,63);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_021{font-family:Arial,serif;font-size:16.0px;color:rgb(63,63,63);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:16.0px;color:darkblue;font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:16.0px;color:darkblue;font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_022{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_023{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:11.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:11.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_024{font-family:Arial,serif;font-size:16.0px;color:rgb(126,126,126);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+      <title>DSTL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed;
+  }
+  div.col-sm-9 div {
+    font-size: 28px;
+  }
+
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
+  {
+      -webkit-text-stroke-width: thin;
+    position: relative;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+  </style>
+<script type="text/javascript" src="83fb874a-5d82-11eb-8b25-0cc47a792c0a_id_83fb874a-5d82-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+       <!-- <li class="active"><a href="#section1">Function</a></li>
+        <li><a href="#section2">Polynomial Function</a></li>
+        <li><a href="#section3">Section 3</a></li>//-->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Function<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a style="font-weight: bold" href="#section4">Function</a></li>
+            <li><a href="#section41">&emsp;Polynomial Function</a></li>
+            <li><a href="#section42">&emsp;Rational Function</a></li>
+              <li><a href="#section43">&emsp;Inverse Function</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Onto mapping<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a style="font-weight: bold" href="#section1">Onto mapping</a></li>
+            <li><a href="#section12">&emsp;One to One Onto</a></li>
+            <li><a href="#section13">&emsp;Into mapping</a></li>
+              <li><a href="#section14">&emsp;Many One mapping</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Relation<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a style="font-weight: bold" href="#section2">Relation</a></li>
+            <li><a href="#section21">&emsp;Inverse Relation</a></li>
+            <li><a href="#section22">&emsp;Identity Relation</a></li>
+              <li><a href="#section23">&emsp;&emsp;Reflexive Relation</a></li>
+              <li><a href="#section24">&emsp;&emsp;Symmetric</a></li>
+              <li><a href="#section25">&emsp;&emsp;Transitive</a></li>
+              <li><a href="#section26">&emsp;Equivalence Relation</a></li>
+              <li><a href="#section27">&emsp;Partial Order Relation</a></li>
+          </ul>
+        </li>
+          <li class="active"><a href="#section3">Complement of a Relation</a></li>
+        <li><a href="#section6">Composition of Relations</a></li>
+        <li><a href="#section7">Matrix representation of Relation</a></li>
+      </ul>
+    </nav>
+
+<div id="section4" style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:71.25px" class="cls_017"><span class="cls_017">Function -</span></div>
+<div style="position:absolute;left:72.00px;top:94.25px" class="cls_003"><span class="cls_003">A binary relation R from A to B is said to be a function if </span><span class="cls_004">∀</span><span class="cls_003"> a </span><span class="cls_004">∈</span><span class="cls_003"> A,</span></div>
+<div style="position:absolute;left:72.00px;top:115.25px" class="cls_004"><span class="cls_004">∃</span><span class="cls_003"> a unique element b </span><span class="cls_004">∈</span><span class="cls_003"> B such that ( a, b ) </span><span class="cls_004">∈</span><span class="cls_003"> R.</span></div>
+<div style="position:absolute;left:72.00px;top:136.25px" class="cls_003"><span class="cls_003">[ ( a, b ) </span><span class="cls_004">∈</span><span class="cls_003"> R can be written as R (a) = b ]</span></div>
+<div style="position:absolute;left:72.00px;top:158.00px" class="cls_003"><span class="cls_003">Set A is called domain & B is called range of the function R.</span></div>
+<div style="position:absolute;left:72.00px;top:179.00px" class="cls_018"><span class="cls_018">Example -</span></div>
+<div style="position:absolute;left:183.00px;top:200.00px" class="cls_003"><span class="cls_003">● f = {( 1, 3 ), ( 1, 5 ), ( 2, 3 ), ( 2, 5 )}</span></div>
+<div style="position:absolute;left:221.25px;top:221.00px" class="cls_003"><span class="cls_003">is not  function because</span></div>
+<div style="position:absolute;left:279.75px;top:242.00px" class="cls_003"><span class="cls_003">f(1) = 3</span></div>
+<div style="position:absolute;left:279.69px;top:263.75px" class="cls_003"><span class="cls_003">f(1) = 5.</span></div>
+<div style="position:absolute;left:176.25px;top:305.75px" class="cls_003"><span class="cls_003">● g = {( 2, 1 ), ( 5, 1 ), ( 8, 1 ), ( 11, 1 )}</span></div>
+<div style="position:absolute;left:234.00px;top:326.75px" class="cls_003"><span class="cls_003">g(2) = 1</span></div>
+<div style="position:absolute;left:324.00px;top:326.75px" class="cls_003"><span class="cls_003">g(8) = 1</span></div>
+<div style="position:absolute;left:234.00px;top:347.75px" class="cls_003"><span class="cls_003">g(8) = 1</span></div>
+<div style="position:absolute;left:324.00px;top:347.75px" class="cls_003"><span class="cls_003">g(11) = 1</span></div>
+<div style="position:absolute;left:234.00px;top:369.50px" class="cls_003"><span class="cls_003" id="section41">is a function.</span></div>
+<div style="position:absolute;left:234.00px;top:390.50px" class="cls_003"><span class="cls_003">domain(g) = { 2, 5, 8, 11 }</span></div>
+<div style="position:absolute;left:234.00px;top:411.50px" class="cls_003"><span class="cls_003">Range(g) = {1}.</span></div>
+<div style="position:absolute;left:72.00px;top:454.50px" class="cls_019"><span class="cls_019">Polynomial Function -</span></div>
+<div style="position:absolute;left:72.00px;top:477.50px" class="cls_003"><span class="cls_003">A function of the form</span></div>
+<div style="position:absolute;left:126.00px;top:509.75px" class="cls_003"><span class="cls_003">F(x) = a</span><span class="cls_008"><sub>0</sub>  </span><span class="cls_003">+ a</span></div>
+<div style="position:absolute;left:213.57px;top:509.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">x + a</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">x</span><span class="cls_009"><sup>2</sup></span><span class="cls_003"> + ............ + a</span><span class="cls_009"><sub>n</sub></span><span class="cls_003">x</span><span class="cls_009"><sup>n</sup></span></div>
+<div style="position:absolute;left:72.00px;top:534.50px" class="cls_003"><span class="cls_003">is called Polynomial Function.</span></div>
+<div style="position:absolute;left:72.00px;top:566.75px" class="cls_003"><span class="cls_003">where a</span></div>
+<div style="position:absolute;left:128.91px;top:566.75px" class="cls_009"><span class="cls_009" id="section42"><sub>0</sub></span><span class="cls_003">, a</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">, .......... , a</span><span class="cls_009"><sub>n</sub> </span><span class="cls_004">∈</span><span class="cls_003"> R, n </span><span class="cls_004">∈</span><span class="cls_003"> N.</span></div>
+<div style="position:absolute;left:72.00px;top:591.50px" class="cls_018"><span class="cls_018">Example -</span></div>
+<div style="position:absolute;left:126.00px;top:613.80px" class="cls_003"><span class="cls_003">f(x) = x</span><span class="cls_009"><sup>3</sup></span><span class="cls_003"> - 2x</span><span class="cls_009"><sup>2</sup></span><span class="cls_003"> + 5 is a polynomial function.</span></div>
+<div style="position:absolute;left:72.00px;top:669.75px" class="cls_019"><span class="cls_019">Rational Function -</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:624px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">The function of type f(x)/g(x) is called a rational function where</span></div>
+<div style="position:absolute;left:72.00px;top:91.25px" class="cls_003"><span class="cls_003">f(x) & g(x) are polynomial functions & g(x) ≠ 0.</span></div>
+<div style="position:absolute;left:207.00px;top:113.00px" class="cls_003"><span class="cls_003" id="section1">F(x) = 1/x</span></div>
+<div style="position:absolute;left:207.00px;top:134.00px" class="cls_003"><span class="cls_003">domain f = R - {0}</span></div>
+<div style="position:absolute;left:207.00px;top:155.00px" class="cls_003"><span class="cls_003">Range f = R - {0}</span></div>
+<div style="position:absolute;left:72.00px;top:198.00px" class="cls_017"><span class="cls_017">Onto mapping -</span></div>
+<div style="position:absolute;left:72.00px;top:221.00px" class="cls_003"><span class="cls_003">A function from A to B is said to be an onto function if every</span></div>
+<div style="position:absolute;left:72.00px;top:242.00px" class="cls_003"><span class="cls_003">element of B is the image of one or more elements of A.</span></div>
+<div style="position:absolute;left:72.00px;top:263.75px" class="cls_018"><span class="cls_018">Example -</span></div>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_1 {
+        width: fit-content;
+    position: absolute;
+    top: 245px;
+    left: 150px;
+}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1 {
+    font-family: cursive;
+}
+	.st2 {
+    font-size: 36px;
+}
+	.st3{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+    .st4 {
+    font-family: unset;
+}
+</style>
+<g>
+	<g>
+		<ellipse class="st0" cx="112" cy="258.6" rx="45.2" ry="127.4"/>
+		<ellipse class="st0" cx="374" cy="256.5" rx="45.2" ry="127.4"/>
+		<text transform="matrix(1 0 0 1 103.4796 185.219)" class="st1 st2">a</text>
+		<text transform="matrix(1 0 0 1 103.4796 228.419)" class="st1 st2">b</text>
+		<text transform="matrix(1 0 0 1 103.4796 271.619)" class="st1 st2">c</text>
+		<text transform="matrix(1 0 0 1 103.4796 314.819)" class="st1 st2">d</text>
+		<text transform="matrix(1 0 0 1 103.4796 358.019)" class="st1 st2">e</text>
+		<text transform="matrix(1 0 0 1 365.5197 190.2188)" class="st1 st2">α</text>
+		<text transform="matrix(1 0 0 1 365.5197 243.2188)" class="st1 st2">β</text>
+		<text transform="matrix(1 0 0 1 365.5197 296.2188)" class="st1 st2">γ</text>
+		<text transform="matrix(1 0 0 1 365.5197 349.2188)" class="st1 st2">δ</text>
+		<line class="st3" x1="128.1" y1="176.4" x2="355.5" y2="185.2"/>
+		<line class="st3" x1="129.5" y1="218.8" x2="355.5" y2="185.2"/>
+		<line class="st3" x1="129.5" y1="258.6" x2="358.3" y2="333.9"/>
+		<line class="st3" x1="132.3" y1="302.4" x2="352.8" y2="231.2"/>
+		<line class="st3" x1="129.5" y1="349" x2="358.3" y2="290.1"/>
+	</g>
+	<text transform="matrix(1 0 0 1 103.4796 114.8898)" class="st4 st2">A</text>
+	<text transform="matrix(1 0 0 1 365.5196 114.8895)" class="st4 st2">B</text>
+</g>
+</svg>
+
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1000px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">f : A → B is said to be one to one function if no two elements of A</span></div>
+<div style="position:absolute;left:72.00px; top:91.25px" class="cls_003"><span class="cls_003">have the same image.</span></div>
+<div style="position:absolute;left:72.00px;top:113.25px" class="cls_018"><span class="cls_018">Example -</span></div>
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_2 {
+        width: fit-content;
+        position: absolute;
+        top: 91px;
+        left: 150px;
+}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1 {
+    font-family: cursive;
+}
+	.st2 {
+    font-size: 36px;
+}
+	.st3{enable-background:new    ;}
+	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st5{
+        font-family: 'MyriadPro-Regular', serif;}
+</style>
+<g>
+	<ellipse class="st0" cx="112" cy="258.6" rx="45.2" ry="127.4"/>
+	<ellipse class="st0" cx="377" cy="258.6" rx="45.2" ry="127.4"/>
+	<text transform="matrix(1 0 0 1 103.4796 185.219)" class="st1 st2">a</text>
+	<text transform="matrix(1 0 0 1 103.4796 228.419)" class="st1 st2">b</text>
+	<text transform="matrix(1 0 0 1 103.4796 271.619)" class="st1 st2">c</text>
+	<text transform="matrix(1 0 0 1 103.4796 314.819)" class="st1 st2">d</text>
+	<text transform="matrix(1 0 0 1 103.4796 358.019)" class="st1 st2">e</text>
+	<text transform="matrix(1 0 0 1 366.5193 172.9001)" class="st1 st2">α</text>
+	<text transform="matrix(1 0 0 1 366.5193 212.9001)" class="st1 st2">β</text>
+	<text transform="matrix(1 0 0 1 366.5193 255.9001)" class="st1 st2">γ</text>
+	<text transform="matrix(1 0 0 1 366.5194 297.5002)" class="st1 st2"><tspan x="0" y="0" class="st1 st2">δ</tspan><tspan x="0" y="33" class="st1 st2">ε</tspan><tspan x="0" y="66" class="st1 st2">ζ</tspan></text>
+	<line class="st4" x1="128.4" y1="177.2" x2="359.6" y2="163"/>
+	<text transform="matrix(1 0 0 1 103.4796 114.8898)" class="st5 st2">A</text>
+	<text transform="matrix(1 0 0 1 365.5196 114.8895)" class="st5 st2">B</text>
+	<line class="st4" x1="129.5" y1="212.9" x2="359.6" y2="349"/>
+	<line class="st4" x1="128.4" y1="258.6" x2="359.6" y2="202.9"/>
+	<line class="st4" x1="128.4" y1="305.9" x2="359.6" y2="248.9"/>
+	<line class="st4" x1="128.4" y1="346.9" x2="359.6" y2="286.9"/>
+</g>
+</svg>
+
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:924px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:369.50px" class="cls_003"><span class="cls_003">i.e.</span></div>
+<div style="position:absolute;left:182.22px;top:369.50px" class="cls_003"><span class="cls_003">f(a) = k</span></div>
+<div style="position:absolute;left:180.00px;top:390.50px" class="cls_003"><span class="cls_003">Then f(b) ≠ k</span></div>
+<div style="position:absolute;left:283.90px;top:390.50px" class="cls_004"><span class="cls_004">∀</span><span class="cls_003"> (a, b)  </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:180.00px;top:422.75px" class="cls_003"><span class="cls_003">Or  f(x</span></div>
+<div style="position:absolute;left:224.43px;top:422.75px" class="cls_009"><span class="cls_009">1</span><span class="cls_003"><sup>) = f(x</sup></span><span class="cls_009">2</span><span class="cls_003">) </span><span class="cls_004">⇒</span><span class="cls_003"> x</span><span class="cls_009">1</span><span class="cls_003"><sup> = x</sup></span><span class="cls_009">2</span></div>
+<div style="position:absolute;left:72.00px;top:468.75px" class="cls_020"><span class="cls_020" id="section12">One to One Onto -</span></div>
+    <div style="position:absolute;left:72.00px;top:492.50px" class="cls_003"><span class="cls_003">f : A → B is one to one onto if f is one to one and onto.</span></div>
+
+    <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_3 {
+        width: fit-content;
+        position: absolute;
+        top: 465px;
+        left: 150px;
+}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1 {
+    font-family: cursive;
+}
+	.st2 {
+    font-size: 36px;
+}
+	.st3{enable-background:new    ;}
+	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st5{font-family:unset;}
+</style>
+<g>
+	<ellipse class="st0" cx="112" cy="258.6" rx="45.2" ry="127.4"/>
+	<ellipse class="st0" cx="378" cy="258.6" rx="45.2" ry="127.4"/>
+	<text transform="matrix(1 0 0 1 103.4796 185.219)" class="st1 st2">a</text>
+	<text transform="matrix(1 0 0 1 103.4796 228.419)" class="st1 st2">b</text>
+	<text transform="matrix(1 0 0 1 103.4796 271.619)" class="st1 st2">c</text>
+	<text transform="matrix(1 0 0 1 103.4796 314.819)" class="st1 st2">d</text>
+	<text transform="matrix(1 0 0 1 103.4796 358.019)" class="st1 st2">e</text>
+	<text transform="matrix(1 0 0 1 366.5191 185.2192)" class="st1 st2">α</text>
+	<text transform="matrix(1 0 0 1 366.5191 228.4191)" class="st1 st2">β</text>
+	<text transform="matrix(1 0 0 1 366.5191 271.6189)" class="st1 st2">γ</text>
+	<text transform="matrix(1 0 0 1 366.5194 316.5002)" class="st1 st2"><tspan x="0" y="0" class="st1 st2">δ</tspan><tspan x="0" y="44" class="st1 st2">ε</tspan></text>
+	<line class="st4" x1="128" y1="172.9" x2="362" y2="173.9"/>
+	<line class="st4" x1="129" y1="216.9" x2="360" y2="264.9"/>
+	<line class="st4" x1="130" y1="258.6" x2="361" y2="216.9"/>
+	<line class="st4" x1="132" y1="298.9" x2="360" y2="300.9"/>
+	<line class="st4" x1="130" y1="346.9" x2="362" y2="348.9"/>
+	<text transform="matrix(1 0 0 1 244.5 149.2)" class="st1 st2">f</text>
+</g>
+</svg>
+</div>
+      <div style="position:absolute;left:50%;margin-left:-306px;top:1090px;width:612px;height:888px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:513.50px" class="cls_003"><span class="cls_003">An onto function is also called surjection.</span></div>
+<div style="position:absolute;left:72.00px;top:534.50px" class="cls_003"><span class="cls_003">One to One is called injunction & one to one onto is called</span></div>
+<div style="position:absolute;left:72.00px;top:555.50px" class="cls_003"><span class="cls_003" id="section13">bijection.</span></div>
+<div style="position:absolute;left:72.00px;top:598.50px" class="cls_020"><span class="cls_020">Into mapping -</span></div>
+<div style="position:absolute;left:72.00px;top:621.50px" class="cls_003"><span class="cls_003">If f : A → B be a mapping such that at least one element of B is</span></div>
+<div style="position:absolute;left:72.00px;top:643.25px" class="cls_003"><span class="cls_003">not f image of any element of A, then f is called Into mapping or A</span></div>
+<div style="position:absolute;left:72.00px;top:664.25px" class="cls_003"><span class="cls_003">into B mapping.</span></div>
+<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_4 {
+        width: fit-content;
+        position: absolute;
+        top: 626px;
+        left: 150px;
+}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:36px;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<ellipse class="st0" cx="112" cy="258.6" rx="45.2" ry="127.4"/>
+	<ellipse class="st0" cx="378" cy="258.6" rx="45.2" ry="127.4"/>
+	<text transform="matrix(1 0 0 1 103.4796 185.219)" class="st1 st2">a</text>
+	<text transform="matrix(1 0 0 1 103.4796 228.419)" class="st1 st2">b</text>
+	<text transform="matrix(1 0 0 1 103.4796 271.619)" class="st1 st2">c</text>
+	<text transform="matrix(1 0 0 1 103.4796 314.819)" class="st1 st2">d</text>
+	<text transform="matrix(1 0 0 1 103.4796 358.019)" class="st1 st2">e</text>
+	<text transform="matrix(1 0 0 1 367.7661 197.219)"><tspan x="0" y="0" class="st1 st2">1</tspan><tspan x="0" y="72" class="st1 st2">0</tspan><tspan x="-5.5" y="144" class="st1 st2">-1</tspan></text>
+	<line class="st4" x1="129" y1="173.9" x2="363" y2="185.2"/>
+	<line class="st4" x1="134" y1="216.9" x2="363" y2="185.2"/>
+	<line class="st4" x1="134" y1="258.6" x2="363" y2="185.2"/>
+	<line class="st4" x1="132" y1="300.9" x2="355" y2="322.9"/>
+	<line class="st4" x1="129" y1="347.9" x2="355" y2="322.9"/>
+</g>
+</svg>
+      </div>
+<div id="section14" style="position:absolute;left:50%;margin-left:-306px;top:1860px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:71.25px" class="cls_020"><span class="cls_020">Many One mapping -</span></div>
+<div style="position:absolute;left:72.00px;top:94.25px" class="cls_003"><span class="cls_003">A mapping f from A to B is said to be many one if two or more</span></div>
+<div style="position:absolute;left:72.00px;top:115.25px" class="cls_003"><span class="cls_003">than two elements of A have the same image of an element of B.</span></div>
+<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 595.3 841.9" style="enable-background:new 0 0 595.3 841.9;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_5 {
+        width: fit-content;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+}
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st1 {
+    font-family: cursive;
+}
+	.st2 {
+    font-size: 36px;
+}
+	.st3{font-family:unset;}
+	.st4{font-size:36px;}
+	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<ellipse class="st0" cx="112" cy="258.6" rx="45.2" ry="127.4"/>
+	<ellipse class="st0" cx="378" cy="258.6" rx="45.2" ry="127.4"/>
+	<text transform="matrix(1 0 0 1 96.9331 184.4928)" class="st1 st2">a</text>
+	<text transform="matrix(1 0 0 1 96.9331 242.1002)" class="st1 st2">b</text>
+	<text transform="matrix(1 0 0 1 96.9331 299.7076)" class="st1 st2">c</text>
+	<text transform="matrix(1 0 0 1 96.9331 357.3146)" class="st1 st2">d</text>
+	<text transform="matrix(1 0 0 1 367.7661 197.219)"><tspan x="0" y="0" class="st1 st2">1</tspan><tspan x="0" y="72" class="st1 st2">2</tspan><tspan x="0" y="144" class="st1 st2">3</tspan></text>
+	<line class="st5" x1="129" y1="172.9" x2="365" y2="184.5"/>
+	<line class="st5" x1="130" y1="229.9" x2="365" y2="184.5"/>
+	<line class="st5" x1="130" y1="283.9" x2="360" y2="258.6"/>
+	<line class="st5" x1="128" y1="341.9" x2="365" y2="326.9"/>
+</g>
+</svg>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1990px;width:612px;height:792px;border-style:none;overflow:hidden" id="section43">
+    <div style="position:absolute;left:72.00px;top:158.25px" class="cls_020"><span class="cls_020">Inverse Function -</span></div>
+<div style="position:absolute;left:72.00px;top:182.55px" class="cls_003"><span class="cls_003">If f is one to one onto mapping then mapping f</span><span class="cls_009"><sup>-1 </sup></span><span class="cls_003"> which associate</span></div>
+<div style="position:absolute;left:72.00px;top:217.25px" class="cls_003"><span class="cls_003">each element y←Y to a unique element of x </span><span class="cls_004">∈</span><span class="cls_003"> X is called inverse</span></div>
+<div style="position:absolute;left:72.00px;top:238.25px" class="cls_003"><span class="cls_003">mapping of f.</span></div>
+<div style="position:absolute;left:72.00px;top:260.55px" class="cls_003"><span class="cls_003">If y = f(x) then x =  f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y).</span></div>
+<div style="position:absolute;left:72.00px;top:295.25px" class="cls_021"><span class="cls_021">Theorem </span><span class="cls_018">-</span></div>
+<div style="position:absolute;left:72.00px;top:317.55px" class="cls_003"><span class="cls_003">Prove that if f : A → B is one to one onto mapping then f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">:B→A</span></div>
+<div style="position:absolute;left:72.00px;top:352.25px" class="cls_003"><span class="cls_003">will be one one onto mapping.</span></div>
+<div style="position:absolute;left:72.00px;top:373.25px" class="cls_018"><span class="cls_018">Proof -</span></div>
+<div style="position:absolute;left:76.44px;top:394.25px" class="cls_003"><span class="cls_003">c is one one onto mapping so we have</span></div>
+<div style="position:absolute;left:99.00px;top:426.50px" class="cls_003"><span class="cls_003">y = f(x)</span></div>
+<div style="position:absolute;left:180.00px;top:426.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003">   f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y) = x ,  x←A , y←B</span></div>
+<div style="position:absolute;left:72.00px;top:461.75px" class="cls_003"><span class="cls_003">Let y</span></div>
+<div style="position:absolute;left:106.68px;top:461.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = f(x</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">) & y</span><span class="cls_009"><sub>2</sub></span><span class="cls_003"> = f(x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:108.00px;top:497.75px" class="cls_003"><span class="cls_003">x</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">, x</span><span class="cls_009"><sub>2</sub> </span><span class="cls_004">∈</span><span class="cls_003"> A  &  y</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">, y</span><span class="cls_009"><sub>2</sub> </span><span class="cls_004">∈</span><span class="cls_003"> B</span></div>
+<div style="position:absolute;left:72.00px;top:533.75px" class="cls_003"><span class="cls_003">Then  x</span></div>
+<div style="position:absolute;left:121.35px;top:533.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">)  &  x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003"> = f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:72.00px;top:559.05px" class="cls_003"><span class="cls_003">Now  f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y</span></div>
+<div style="position:absolute;left:145.06px;top:559.05px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">) = f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:99.00px;top:605.00px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> x</span></div>
+<div style="position:absolute;left:127.44px;top:605.00px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003"> = f(x</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">) = f(x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:99.00px;top:640.25px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> y</span></div>
+<div style="position:absolute;left:127.44px;top:640.25px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = y</span><span class="cls_009">2</span></div>
+<div style="position:absolute;left:72.00px;top:666.30px" class="cls_004"><span class="cls_004">∴</span><span class="cls_003">  f</span><span class="cls_009"><sup> -1 </sup></span><span class="cls_003">is one one.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2610px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">Again let x </span><span class="cls_004">∈</span><span class="cls_003"> A then for mapping f  </span><span class="cls_004">∃</span><span class="cls_003"> an element y </span><span class="cls_004">∈</span><span class="cls_003"> B such</span></div>
+<div style="position:absolute;left:72.00px;top:91.25px" class="cls_003"><span class="cls_003">that y = f(x)</span></div>
+<div style="position:absolute;left:72.00px;top:113.55px" class="cls_003"><span class="cls_003">But f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y) = x  </span><span class="cls_004">∀</span><span class="cls_003"> x </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:72.00px;top:159.50px" class="cls_004"><span class="cls_004">∴</span></div>
+<div style="position:absolute;left:108.00px;top:149.55px" class="cls_003"><span class="cls_003">( f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003">(y) : y←B ) = A</span></div>
+<div style="position:absolute;left:72.00px;top:184.80px" class="cls_003"><span class="cls_003">Thus f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003"> : B → A is onto</span></div>
+<div style="position:absolute;left:72.00px;top:220.80px" class="cls_003"><span class="cls_003">Hence f</span><span class="cls_009"><sup> -1</sup></span><span class="cls_003"> : B → A is one one onto mapping.</span></div>
+<div style="position:absolute;left:72.00px;top:276.50px" class="cls_018"><span class="cls_018">Theorem -</span></div>
+<div style="position:absolute;left:72.00px;top:297.50px" class="cls_003"><span class="cls_003">The inverse of an invertible mapping is unique.</span></div>
+<div style="position:absolute;left:72.00px;top:319.25px" class="cls_018"><span class="cls_018">Proof -</span></div>
+<div style="position:absolute;left:72.00px;top:340.25px" class="cls_003"><span class="cls_003">Let f : A → B then by invertible mapping if possible</span></div>
+<div style="position:absolute;left:72.00px;top:361.25px" class="cls_003"><span class="cls_003">Let   g : B→A</span></div>
+<div style="position:absolute;left:72.00px;top:382.25px" class="cls_003"><span class="cls_003">&    h : B→A</span></div>
+<div style="position:absolute;left:72.00px;top:404.00px" class="cls_003"><span class="cls_003">Be two mapping of f</span></div>
+<div style="position:absolute;left:72.00px;top:425.00px" class="cls_003"><span class="cls_003">Let b </span><span class="cls_004">∈</span><span class="cls_003"> B and</span></div>
+<div style="position:absolute;left:126.00px;top:456.50px" class="cls_003"><span class="cls_003">g(b) = a</span></div>
+<div style="position:absolute;left:181.57px;top:456.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> ,  a<sub>1</sub></span><span class="cls_009"> </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:126.00px;top:492.50px" class="cls_003"><span class="cls_003">h(b) = a</span></div>
+<div style="position:absolute;left:181.57px;top:492.50px" class="cls_009"><span class="cls_009"><sub>2</sub></span><span class="cls_003"> , a<sub>2</sub></span><span class="cls_009"> </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:72.00px;top:528.50px" class="cls_003"><span class="cls_003">Since g(b) = a</span></div>
+<div style="position:absolute;left:172.03px;top:528.50px" class="cls_009"><span class="cls_009"><sub>1</sub>  </span><span class="cls_004">⇒</span><span class="cls_003"> b = f(a</span><span class="cls_009"><sub>1</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:72.00px;top:563.75px" class="cls_003"><span class="cls_003">&    h(b) = a</span></div>
+<div style="position:absolute;left:143.57px;top:563.75px" class="cls_009"><span class="cls_009"><sub>2</sub></span><span class="cls_004"> ⇒</span><span class="cls_003"> b = f(a</span><span class="cls_009">2</span><span class="cls_003"><sup>)</sup></span></div>
+<div style="position:absolute;left:72.00px;top:588.50px" class="cls_003"><span class="cls_003">Which shows that</span></div>
+<div style="position:absolute;left:108.00px;top:620.75px" class="cls_003"><span class="cls_003">f(a</span></div>
+<div style="position:absolute;left:252.00px;top:620.75px" class="cls_003"><span class="cls_003">[since f is one one mapping]</span></div>
+<div style="position:absolute;left:126.67px;top:620.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">) = f(a</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:72.00px;top:656.75px" class="cls_004"><span class="cls_004">⇒</span></div>
+<div style="position:absolute;left:144.00px;top:656.75px" class="cls_003"><span class="cls_003">a</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = a</span><span class="cls_009"><sub>2</sub></span></div>
+<div style="position:absolute;left:72.00px;top:681.50px" class="cls_003"><span class="cls_003">This prove that g(b) = h(b) </span><span class="cls_004">∀</span><span class="cls_003"> b </span><span class="cls_004">∈</span><span class="cls_003"> B</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3245px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">Thus, the inverse of f is unique.</span></div>
+<div style="position:absolute;left:72.00px;top:113.00px" class="cls_018"><span class="cls_018">Def -</span></div>
+<div style="position:absolute;left:72.00px;top:134.00px" class="cls_003"><span class="cls_003">If f : A → B  &  g : B→C</span></div>
+<div style="position:absolute;left:72.00px;top:155.00px" class="cls_003"><span class="cls_003">Then the composition of f and g is denoted by gof and is given by</span></div>
+<div style="position:absolute;left:72.00px;top:176.00px" class="cls_003"><span class="cls_003">( gof )x = g[f(x)] for all x </span><span class="cls_004">∈</span><span class="cls_003"> A.</span></div>
+<div style="position:absolute;left:72.00px;top:218.75px" class="cls_018"><span class="cls_018">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:239.75px" class="cls_003"><span class="cls_003">Let A = { 1, 2, 3}, B = { a, b} & C = { r, s }</span></div>
+<div style="position:absolute;left:72.00px;top:260.75px" class="cls_003"><span class="cls_003">And f : A → B defined by f(1) = a; f(2) = a; f(3) = b  &  g : B→C</span></div>
+<div style="position:absolute;left:72.00px;top:281.75px" class="cls_003"><span class="cls_003">defined by  g(a) = s; g(b) = r;</span></div>
+<div style="position:absolute;left:72.00px;top:303.50px" class="cls_003"><span class="cls_003">Then gof : A→C is defined by</span></div>
+<div style="position:absolute;left:72.00px;top:324.50px" class="cls_003"><span class="cls_003">(gof)1 = g(f(1)) = g(a) = s</span></div>
+<div style="position:absolute;left:72.00px;top:345.50px" class="cls_003"><span class="cls_003">(gof)2 = g(f(2)) = g(a) = s</span></div>
+<div style="position:absolute;left:324.00px;top:345.50px" class="cls_013"><span class="cls_013">gof = {(1, s), (2, s), (3, r)}</span></div>
+<div style="position:absolute;left:72.00px;top:366.50px" class="cls_003"><span class="cls_003">(gof)3 = g(f(3)) = g(b) = r</span></div>
+<div style="position:absolute;left:72.00px;top:409.25px" class="cls_018"><span class="cls_018">Theorem -</span></div>
+<div style="position:absolute;left:72.00px;top:430.25px" class="cls_003"><span class="cls_003">If f : x→y &</span></div>
+<div style="position:absolute;left:85.33px;top:451.25px" class="cls_003"><span class="cls_003">g : y → z  be one one onto.</span></div>
+<div style="position:absolute;left:72.00px;top:472.25px" class="cls_003"><span class="cls_003">Then composite function gof : x→z is one one onto and</span></div>
+<div style="position:absolute;left:85.33px;top:494.55px" class="cls_003"><span class="cls_003">(gof)-1 = f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">og</span><span class="cls_009"><sup>-1</sup></span></div>
+<div style="position:absolute;left:72.00px;top:529.25px" class="cls_018"><span class="cls_018">Proof -</span></div>
+<div style="position:absolute;left:72.00px;top:550.25px" class="cls_003"><span class="cls_003">Since f & g both are one to one onto</span></div>
+<div style="position:absolute;left:72.00px;top:572.55px" class="cls_004"><span class="cls_004">∴</span><span class="cls_003"> f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> & g</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> exist and will be one one and onto.</span></div>
+<div style="position:absolute;left:72.00px;top:607.25px" class="cls_003"><span class="cls_003">To prove that gof is one one</span></div>
+<div style="position:absolute;left:99.00px;top:639.50px" class="cls_003"><span class="cls_003">(gof)x</span></div>
+<div style="position:absolute;left:252.00px;top:639.50px" class="cls_004"><span class="cls_004">∀</span><span class="cls_003"> x</span></div>
+<div style="position:absolute;left:139.89px;top:639.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = (gof)x</span><span class="cls_009"><sub>2</sub></span></div>
+<div style="position:absolute;left:280.44px;top:639.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">, x</span><span class="cls_009"><sub>2</sub> </span><span class="cls_004">∈</span><span class="cls_003"> x</span></div>
+<div style="position:absolute;left:99.00px;top:674.75px" class="cls_003"><span class="cls_003">g(f(x</span></div>
+<div style="position:absolute;left:130.99px;top:674.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">)) = g(f(x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">))</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3862px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:99.00px;top:81.50px" class="cls_003"><span class="cls_003">g(y</span></div>
+<div style="position:absolute;left:121.22px;top:81.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">) = g(y</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:108.00px;top:116.75px" class="cls_003"><span class="cls_003">y</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = y</span><span class="cls_009"><sub>2</sub></span></div>
+<div style="position:absolute;left:72.00px;top:152.75px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003">   f(x</span></div>
+<div style="position:absolute;left:107.77px;top:152.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">) = f(x</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">)</span></div>
+<div style="position:absolute;left:72.00px;top:188.00px" class="cls_004"><span class="cls_004">⇒</span></div>
+<div style="position:absolute;left:144.00px;top:188.00px" class="cls_003"><span class="cls_003">x</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = x</span><span class="cls_009"><sub>2</sub></span></div>
+<div style="position:absolute;left:72.00px;top:213.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> gof is one to one.</span></div>
+<div style="position:absolute;left:72.00px;top:234.50px" class="cls_003"><span class="cls_003">To prove gof is onto.</span></div>
+<div style="position:absolute;left:72.00px;top:255.50px" class="cls_003"><span class="cls_003">Let z </span><span class="cls_004">∈</span><span class="cls_003"> Z since g is onto therefore </span><span class="cls_004">∃</span></div>
+<div style="position:absolute;left:72.00px;top:276.50px" class="cls_003"><span class="cls_003">y </span><span class="cls_004">∈</span><span class="cls_003"> Y such that g(y) = z</span></div>
+<div style="position:absolute;left:72.00px;top:297.50px" class="cls_003"><span class="cls_003">& f is onto therefore </span><span class="cls_004">∃</span><span class="cls_003">  x </span><span class="cls_004">∈</span><span class="cls_003"> X</span></div>
+<div style="position:absolute;left:108.00px;top:319.25px" class="cls_003"><span class="cls_003">f(x) = y</span></div>
+<div style="position:absolute;left:72.00px;top:340.25px" class="cls_004"><span class="cls_004">∴</span><span class="cls_003"> (gof)x = g(f(x)) = g(y) = z</span></div>
+<div style="position:absolute;left:72.00px;top:361.25px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> gof is onto</span></div>
+<div style="position:absolute;left:72.00px;top:383.55px" class="cls_003"><span class="cls_003">To prove (gof)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> = g</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">of</span><span class="cls_009"><sup>-1</sup></span></div>
+<div style="position:absolute;left:72.00px;top:418.25px" class="cls_004"><span class="cls_004">∵</span><span class="cls_003"> (gof) is one one onto</span></div>
+<div style="position:absolute;left:72.00px;top:440.55px" class="cls_004"><span class="cls_004">∴</span><span class="cls_003"> (gof)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> exist.</span></div>
+<div style="position:absolute;left:72.00px;top:475.25px" class="cls_003"><span class="cls_003">Let f : X→Y    f(x) = y ,  x </span><span class="cls_004">∈</span><span class="cls_003"> X, y </span><span class="cls_004">∈</span><span class="cls_003"> Y</span></div>
+<div style="position:absolute;left:108.00px;top:496.25px" class="cls_003"><span class="cls_003">g : Y→Z  g(y) = z</span></div>
+<div style="position:absolute;left:72.00px;top:517.25px" class="cls_004"><span class="cls_004">∴</span><span class="cls_003">  gof : X→Z</span></div>
+<div style="position:absolute;left:195.56px;top:517.25px" class="cls_003"><span class="cls_003">(given)</span></div>
+<div style="position:absolute;left:72.00px;top:538.25px" class="cls_003"><span class="cls_003">(gof)X = Z , x </span><span class="cls_004">∈</span><span class="cls_003"> X , z </span><span class="cls_004">∈</span><span class="cls_003"> Z</span></div>
+<div style="position:absolute;left:72.00px;top:560.00px" class="cls_003"><span class="cls_003">Hence by definition of inverse mapping</span></div>
+<div style="position:absolute;left:144.00px;top:581.55px" class="cls_003"><span class="cls_003">f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">(y) = x</span></div>
+<div style="position:absolute;left:72.00px;top:627.50px" class="cls_003"><span class="cls_003">&</span></div>
+<div style="position:absolute;left:144.00px;top:617.55px" class="cls_003"><span class="cls_003">g</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">(z) = y</span></div>
+<div style="position:absolute;left:72.00px;top:662.75px" class="cls_004"><span class="cls_004">∴</span></div>
+<div style="position:absolute;left:108.00px;top:652.80px" class="cls_003"><span class="cls_003">(gof)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">z = x</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4550px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:71.55px" class="cls_003"><span class="cls_003">Now (f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">og</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">)z = f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">[g</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">(z)] = f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">(y) = x</span></div>
+<div style="position:absolute;left:72.00px;top:116.75px" class="cls_004"><span class="cls_004">∴</span></div>
+<div style="position:absolute;left:108.00px;top:106.80px" class="cls_003"><span class="cls_003">(gof)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">z = (f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">og</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">)z</span></div>
+<div style="position:absolute;left:144.00px;top:142.80px" class="cls_003"><span class="cls_003">(gof)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> = f</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">og</span><span class="cls_009"><sup>-1</sup></span></div>
+<div style="position:absolute;left:72.00px;top:198.50px" class="cls_022"><span class="cls_022">Question -</span></div>
+<div style="position:absolute;left:72.00px;top:219.50px" class="cls_003"><span class="cls_003">Let f : R→R be a function defined by f(x) = px + q  </span><span class="cls_004">∀</span><span class="cls_003"> x </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:72.00px;top:251.75px" class="cls_003"><span class="cls_003">Also fof = I</span></div>
+<div style="position:absolute;left:148.02px;top:251.75px" class="cls_009"><span class="cls_009">R</span><span class="cls_003"> , find the value of p and q.</span></div>
+<div style="position:absolute;left:72.00px;top:276.50px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<div style="position:absolute;left:126.00px;top:297.50px" class="cls_003"><span class="cls_003">(fof)x = I<sub>R</sub>x</span></div>
+<div style="position:absolute;left:72.00px;top:319.25px" class="cls_004"><span class="cls_004">⇒</span></div>
+<div style="position:absolute;left:144.00px;top:319.25px" class="cls_003"><span class="cls_003">f(f(x)) = x</span></div>
+<div style="position:absolute;left:72.00px;top:340.25px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003">   f(px + q) = x</span></div>
+<div style="position:absolute;left:99.00px;top:361.25px" class="cls_003"><span class="cls_003">p(px + q) + q = x</span></div>
+<div style="position:absolute;left:99.00px;top:383.55px" class="cls_003"><span class="cls_003">P</span><span class="cls_009"><sup>2</sup></span><span class="cls_003">x + pq +q = x</span></div>
+<div style="position:absolute;left:99.00px;top:418.80px" class="cls_003"><span class="cls_003">X(p</span><span class="cls_009"><sup>2</sup></span><span class="cls_003">-1) + pq + q = 0 ,</span></div>
+<div style="position:absolute;left:288.00px;top:428.75px" class="cls_004"><span class="cls_004">∀</span><span class="cls_003"> x </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:72.00px;top:454.80px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003">  p</span><span class="cls_009"><sup>2</sup></span><span class="cls_003">-1 = 0   &  pq + q = 0</span></div>
+<div style="position:absolute;left:108.00px;top:489.50px" class="cls_003"><span class="cls_003">p = 1, -1;   q(p+1) = 0</span></div>
+<div style="position:absolute;left:72.00px;top:510.50px" class="cls_003"><span class="cls_003">When p = 1, q=0  &  when p = -1, q is any real value</span></div>
+<div style="position:absolute;left:72.00px;top:532.25px" class="cls_003"><span class="cls_003">Hence either</span></div>
+<div style="position:absolute;left:90.00px;top:553.25px" class="cls_003"><span class="cls_003">1. P = 1 and q = 0.</span></div>
+<div style="position:absolute;left:144.00px;top:574.25px" class="cls_003"><span class="cls_003" id="section2">or</span></div>
+<div style="position:absolute;left:90.00px;top:595.25px" class="cls_003"><span class="cls_003">1. P = -1 and q = any real value.</span></div>
+<div style="position:absolute;left:72.00px;top:659.00px" class="cls_023"><span class="cls_023">Relation </span><span class="cls_022">-</span></div>
+<div style="position:absolute;left:72.00px;top:680.00px" class="cls_022"><span class="cls_022">Ordered Pair -</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5182px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">Two numbers a and b can be represented as ordered pair (a, b),</span></div>
+<div style="position:absolute;left:72.00px;top:91.25px" class="cls_003"><span class="cls_003">where a is first number & b is second number.</span></div>
+<div style="position:absolute;left:126.00px;top:113.00px" class="cls_003"><span class="cls_003">(a, b) ≠ (b, a)</span></div>
+<div style="position:absolute;left:72.00px;top:155.00px" class="cls_022"><span class="cls_022">Equality of two ordered pairs -</span></div>
+<div style="position:absolute;left:99.00px;top:176.00px" class="cls_003"><span class="cls_003">(a, b) = (c, d)</span></div>
+<div style="position:absolute;left:199.89px;top:176.00px" class="cls_004"><span class="cls_004">⇔</span><span class="cls_003">  a = c  &  b = d</span></div>
+<div style="position:absolute;left:72.00px;top:218.75px" class="cls_022"><span class="cls_022">Problem -</span></div>
+<div style="position:absolute;left:72.00px;top:239.75px" class="cls_003"><span class="cls_003">Find a and b when (2a + b, 11) = (1, a - 3b)</span></div>
+<div style="position:absolute;left:72.00px;top:260.75px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<div style="position:absolute;left:126.00px;top:281.75px" class="cls_003"><span class="cls_003">Since (a, b) = (c, d)</span></div>
+<div style="position:absolute;left:126.00px;top:303.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> a = c  &  b = d</span></div>
+<div style="position:absolute;left:126.00px;top:324.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> 2a + b = 1</span></div>
+<div style="position:absolute;left:325.15px;top:324.50px" class="cls_003"><span class="cls_003">______________(1)</span></div>
+<div style="position:absolute;left:126.00px;top:345.50px" class="cls_003"><span class="cls_003">&</span></div>
+<div style="position:absolute;left:180.00px;top:345.50px" class="cls_003"><span class="cls_003">11 = a - 3b</span></div>
+<div style="position:absolute;left:360.00px;top:345.50px" class="cls_003"><span class="cls_003">____________(2)</span></div>
+<div style="position:absolute;left:180.00px;top:366.50px" class="cls_003"><span class="cls_003">11 = a - 3(1 - 2a)</span></div>
+<div style="position:absolute;left:432.00px;top:366.50px" class="cls_003"><span class="cls_003">From (1)</span></div>
+<div style="position:absolute;left:180.00px;top:387.50px" class="cls_003"><span class="cls_003">11 = a - 3 + 6a</span></div>
+<div style="position:absolute;left:180.00px;top:409.25px" class="cls_003"><span class="cls_003">7a = 14  </span><span class="cls_004">⇒</span><span class="cls_003"> a = 2  &  b = -3</span></div>
+<div style="position:absolute;left:468.00px;top:409.25px" class="cls_022"><span class="cls_022">- Answer</span></div>
+<div style="position:absolute;left:90.00px;top:451.25px" class="cls_015"><span class="cls_015">●</span><span class="cls_003">  If A = { 1, 2, 5}  & B = {2, 4 } then</span></div>
+<div style="position:absolute;left:99.00px;top:472.25px" class="cls_003"><span class="cls_003">A × B = { (1, 2), (1, 4), (2, 2), (2, 4), (5, 2),(5, 4) }</span></div>
+<div style="position:absolute;left:72.00px;top:515.00px" class="cls_022"><span class="cls_022">Definition -</span></div>
+<div style="position:absolute;left:72.00px;top:536.00px" class="cls_003"><span class="cls_003">A Relation R from set A to set B is a subset of A × B. R is a</span></div>
+<div style="position:absolute;left:72.00px;top:557.00px" class="cls_003"><span class="cls_003">relation from A to B iff R </span><span class="cls_004">⊆</span><span class="cls_003"> A × B.</span></div>
+<div style="position:absolute;left:72.00px;top:578.00px" class="cls_003"><span class="cls_003">{ (a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R can be written as </span><span class="cls_024">aRb</span><span class="cls_003"> }</span></div>
+<div style="position:absolute;left:72.00px;top:620.75px" class="cls_022"><span class="cls_022">Example </span><span class="cls_003">-</span></div>
+<div style="position:absolute;left:72.00px;top:641.75px" class="cls_003"><span class="cls_003">Let A = { 1, 2, 5 }, B = { 2, 4 }.</span></div>
+<div style="position:absolute;left:72.00px;top:662.75px" class="cls_003"><span class="cls_003">Let a relation from A to B is</span></div>
+<div style="position:absolute;left:72.00px;top:683.75px" class="cls_003"><span class="cls_003">expressed by the statement ( less than)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5820px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">Then A × B = { (1, 2), (1, 4), (2, 2), (2, 4), (5, 2),(5, 4) }</span></div>
+<div style="position:absolute;left:72.00px;top:91.25px" class="cls_003"><span class="cls_003">Then x&lt;y is a relation  R = { ( 1, 2), ( 1, 4 ), ( 2, 4) }</span></div>
+<div style="position:absolute;left:72.00px;top:113.00px" class="cls_003"><span class="cls_003">Which shows that R </span><span class="cls_004">⊆</span><span class="cls_003"> A × B, hence R is a relation from A to B</span></div>
+<div style="position:absolute;left:72.00px;top:134.00px" class="cls_003"><span class="cls_003">D of R = { 1, 2 }</span></div>
+<div style="position:absolute;left:72.00px;top:155.00px" class="cls_003"><span class="cls_003"id="section3">Range of R = { 2, 4 }</span></div>
+<div style="position:absolute;left:72.00px;top:197.00px" class="cls_022"><span class="cls_022">Complement of a Relation -</span></div>
+<div style="position:absolute;left:72.00px;top:218.75px" class="cls_003"><span class="cls_003">The complement of relation R from A to B is defined as</span></div>
+</div>
+ <div style="font-size: 15px; font-weight: 500; color: dimgray; position:absolute;left:50%;margin-left:-238px;top:5995px;width:612px;height:792px;border-style:none;overflow:hidden">
+ <div style="position:absolute;left:72.00px;top:70.25px" class="cls_002"><span class="cls_002">R = { (a, b) : (a, b) </span><span class="cls_003">∉</span><span class="cls_002"> R }, (a, b)    A X B</span></div>
+<div style="position:absolute;left:72.00px;top:53.25px" class="cls_002"><span class="cls_002">_</span></div>
+ </div>
+     <div style="position:absolute;left:50%;margin-left:-306px;top:5840px;width:612px;height:792px;border-style:none;overflow:hidden">
+    <div style="position:absolute;left:72.00px;top:260.75px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:281.75px" class="cls_003"><span class="cls_003">If R is the relation from A to B</span></div>
+<div style="position:absolute;left:72.00px;top:303.50px" class="cls_003"><span class="cls_003">where  A = { 1, 2, 3 }</span></div>
+<div style="position:absolute;left:252.00px;top:303.50px" class="cls_003"><span class="cls_003">B = { 8, 9 }</span></div>
+<div style="position:absolute;left:144.00px;top:324.50px" class="cls_003"><span class="cls_003">R = { (1,8), (2,8), (1,9), (3,9) }</span></div>
+     </div>
+
+<div style="color: dimgray;position:absolute;left:50%;margin-left:-306px;top:6120px;width:612px;height:792px;border-style:none;overflow:hidden;font-weight: 500;font-size: 15px;">
+    <div style="position:absolute;left:72.00px;top:72.25px" class="cls_002"><span class="cls_002">Find complement of relation R i.e. R</span></div>
+<div style="position:absolute;left:301px;top:55.25px" class="cls_002"><span class="cls_002">_</span></div>
+<div style="font-weight: 700;position:absolute;left:72.00px;top:95.00px;color: mediumseagreen;" class="cls_002"><span class="cls_002">Solution</span></div>
+<div style="position:absolute;left:72.00px;top: 115px;" class="cls_002"><span class="cls_002">Since,</span></div>
+    <div style="position:absolute;left:108.00px;top:136.00px" class="cls_002"><span class="cls_002">A X B = {(1, 8), (1, 9), (2, 8), (2, 9), (3, 8), (3, 9)}</span></div>
+<div style="position:absolute;left:72.00px;top:162.00px" class="cls_004"><span class="cls_004">∴</span></div>
+<div style="position:absolute;left:108.00px;top:162.00px" class="cls_002"><span class="cls_002">R = {(2, 9), (3, 8)}</span></div>
+<div style="position:absolute;left:109.00px;top:144.75px" class="cls_002"><span class="cls_002">_</span></div>
+<div style="position:absolute;left:72.00px;top:188.75px" class="cls_002"><span class="cls_002"id="section21">★</span><span class="cls_002"> Element of A X B which is not in R is complement of R.</span></div>
+         </div>
+               <div style="position:absolute;left:50%;margin-left:-306px;top:6016px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:366.50px" class="cls_022"><span class="cls_022">Inverse Relation-</span></div>
+<div style="position:absolute;left:72.00px;top:387.50px" class="cls_003"><span class="cls_003">If R is the relation from A→B.</span></div>
+<div style="position:absolute;left:72.00px;top:409.80px" class="cls_003"><span class="cls_003">Then R</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> is defined as</span></div>
+<div style="position:absolute;left:108.00px;top:445.80px" class="cls_003"><span class="cls_003">R</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> = {(b, a), : (a, b)←R }</span></div>
+<div style="position:absolute;left:72.00px;top:481.05px" class="cls_003"><span class="cls_003">also ( R</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003">)</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> = R</span></div>
+<div style="position:absolute;left:288.00px;top:491.00px" class="cls_003"><span class="cls_003">b </span><span class="cls_004">∈</span><span class="cls_003"> B    &    a </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:72.00px;top:530.75px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:551.75px" class="cls_003"><span class="cls_003"id="section22">If  A = {a, b, c}, B = {1, 2, 3} and R = {(a, 1), (a, 3), (b, 3),(c, 3)}</span></div>
+<div style="position:absolute;left:72.00px;top:574.05px" class="cls_003"><span class="cls_003">Then R</span><span class="cls_009"><sup>-1</sup></span><span class="cls_003"> = {(1, a), (3, a), (3, b), (3, c)}.</span></div>
+<div style="position:absolute;left:72.00px;top:666.50px" class="cls_022"><span class="cls_022">Identity Relation -</span></div>
+<div style="position:absolute;left:72.00px;top:688.25px" class="cls_003"><span class="cls_003">If A = {1, 2, 3}, Then I</span></div>
+<div style="position:absolute;left:232.51px;top:688.25px" class="cls_003"><span class="cls_003">= {(1, 1), (2, 2), (3, 3)} is an identity</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6655px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003"id="section23">relation in A.</span></div>
+<div style="position:absolute;left:90.00px;top:91.25px" class="cls_011"><span class="cls_011">1. </span><span class="cls_022">Reflexive Relation -</span></div>
+<div style="position:absolute;left:99.00px;top:113.00px" class="cls_003"><span class="cls_003">If R be a relation in a set A i.e. R is a subset of A × A then R is</span></div>
+<div style="position:absolute;left:99.00px;top:134.00px" class="cls_003"><span class="cls_003">called a reflexive relation if (a, a)←R, </span><span class="cls_004">∀</span><span class="cls_003"> a←A</span></div>
+<div style="position:absolute;left:99.00px;top:155.00px" class="cls_003"><span class="cls_003">Hence R is reflexive if (a, a) </span><span class="cls_004">∈</span><span class="cls_003"> R, </span><span class="cls_004">∀</span><span class="cls_003"> a←A.</span></div>
+<div style="position:absolute;left:99.00px;top:176.00px" class="cls_003"><span class="cls_003">R is not reflexive if there is at least one element a←A, such</span></div>
+<div style="position:absolute;left:99.00px;top:197.00px" class="cls_003"><span class="cls_003">that (a, a) </span><span class="cls_004">∉</span><span class="cls_003"> R.</span></div>
+<div style="position:absolute;left:99.00px;top:239.75px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:99.00px;top:260.75px" class="cls_003"><span class="cls_003">If  A = {1, 2, 3} then relation R = {(1, 1), (1, 3), (2, 2), (3, 3), (4,</span></div>
+<div style="position:absolute;left:99.00px;top:281.75px" class="cls_003"><span class="cls_003">4), (3, 4)} in A is reflexive, since </span><span class="cls_004">∀</span><span class="cls_003"> a </span><span class="cls_004">∈</span><span class="cls_003"> A</span><span class="cls_004"> ⇒</span><span class="cls_003">  (a, a) </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:99.00px;top:303.50px" class="cls_003"><span class="cls_003">If</span></div>
+<div style="position:absolute;left:116.78px;top:303.50px" class="cls_004"><span class="cls_004"id="section24">∀</span><span class="cls_003"> a </span><span class="cls_004">∈</span><span class="cls_003"> A, (a, a) </span><span class="cls_004">∉</span><span class="cls_003"> R then R is called irreflexive relation.</span></div>
+<div style="position:absolute;left:90.00px;top:345.50px" class="cls_011"><span class="cls_011">2. </span><span class="cls_022">Symmetric -</span></div>
+<div style="position:absolute;left:99.00px;top:366.50px" class="cls_003"><span class="cls_003"id="section25">(a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R </span><span class="cls_004">⇒</span><span class="cls_003"> (b, a) </span><span class="cls_004">∈</span><span class="cls_003"> R   for all a,b </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:90.00px;top:387.50px" class="cls_011"><span class="cls_011">3. </span><span class="cls_022">Transitive -</span></div>
+<div style="position:absolute;left:99.00px;top:409.25px" class="cls_003"><span class="cls_003"id="section26">If (a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R and (b, c) </span><span class="cls_004">∈</span><span class="cls_003"> R  </span><span class="cls_004">⇒</span><span class="cls_003"> (a, c) </span><span class="cls_004">∈</span><span class="cls_003"> R, for all a, b, c←A</span></div>
+<div style="position:absolute;left:72.00px;top:451.25px" class="cls_022"><span class="cls_022">Equivalence Relation -</span></div>
+<div style="position:absolute;left:72.00px;top:472.25px" class="cls_003"><span class="cls_003">A relation which is reflexive, symmetric and transitive is called an</span></div>
+<div style="position:absolute;left:72.00px;top:493.25px" class="cls_003"><span class="cls_003">equivalence relation.</span></div>
+<div style="position:absolute;left:72.00px;top:536.00px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:567.50px" class="cls_003"><span class="cls_003">If  A = {1, 2, 3}, R</span></div>
+<div style="position:absolute;left:194.27px;top:567.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = {(1, 1), (2, 2), (3, 3), (1, 3)}</span></div>
+<div style="position:absolute;left:72.00px;top:603.50px" class="cls_003"><span class="cls_003">R</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> is reflexive since (1, 1), (2, 2), (3,3)←R</span><span class="cls_009"><sub>1</sub></span></div>
+<div style="position:absolute;left:72.00px;top:639.50px" class="cls_003"><span class="cls_003"><sup>R</sup></span><span class="cls_009"><sub>1</sub> </span><span class="cls_003">is not symmetric because (1, 3)</span><span class="cls_004">∈</span><span class="cls_003"> R</span><span class="cls_009"><sub>1</sub> </span><span class="cls_004">⇏</span><span class="cls_003"> (3, 1)</span><span class="cls_004">∈</span><span class="cls_003"> R</span><span class="cls_009"><sub>1</sub></span></div>
+<div style="position:absolute;left:72.00px;top:674.75px" class="cls_003"><span class="cls_003"><sup>R</sup></span><span class="cls_009"><sub>1</sub> </span><span class="cls_003">is transitive because (1, 1)</span><span class="cls_004">∈</span><span class="cls_003"> R</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> & (1, 3)</span><span class="cls_004">∈</span><span class="cls_003"> R</span><span class="cls_009"><sub>1</sub> </span><span class="cls_004">⇒</span><span class="cls_003"> (1, 3)</span><span class="cls_004">∈</span><span class="cls_003"> R</span><span class="cls_009"><sub>1</sub></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7278px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:81.50px" class="cls_003"><span class="cls_003">R</span><span class="cls_009"><sub>2</sub> </span><span class="cls_003">= {(1, 1), (3, 3), (1, 3), (3, 1)} is symmetric and transitive but</span></div>
+<div style="position:absolute;left:72.00px;top:116.75px" class="cls_003"><span class="cls_003">not reflexive because (2, 2) </span><span class="cls_004">∉</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:296.38px;top:116.75px" class="cls_009"><span class="cls_009"><sub> 1</sub></span><span class="cls_003">.</span></div>
+<div style="position:absolute;left:72.00px;top:163.25px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:184.25px" class="cls_003"><span class="cls_003">If R is a relation in a set of integers z defined by R = {(x, y) : x←z,</span></div>
+<div style="position:absolute;left:72.00px;top:205.25px" class="cls_003"><span class="cls_003">y←z, x-y is divisible by 6 } P.T. R is an equivalence relation.</span></div>
+<div style="position:absolute;left:72.00px;top:247.25px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<div style="position:absolute;left:72.00px;top:269.00px" class="cls_003"><span class="cls_003">Let x </span><span class="cls_004">∈</span><span class="cls_003"> z then x-x = 0 is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:290.00px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x, x) </span><span class="cls_004">∈</span><span class="cls_003"> R for all x </span><span class="cls_004">∈</span><span class="cls_003"> z</span></div>
+<div style="position:absolute;left:126.00px;top:311.00px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> R is reflexive</span></div>
+<div style="position:absolute;left:72.00px;top:332.00px" class="cls_003"><span class="cls_003">Again (x, y) </span><span class="cls_004">∈</span><span class="cls_003"> R </span><span class="cls_004">⇒</span><span class="cls_003"> x-y is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:353.75px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x-y) is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:374.75px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (y-x) is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:395.75px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (y-x)  </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:126.00px;top:416.75px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> R is symmetric</span></div>
+<div style="position:absolute;left:72.00px;top:437.75px" class="cls_003"><span class="cls_003">Since (x, y) </span><span class="cls_004">∈</span><span class="cls_003"> R  &</span></div>
+<div style="position:absolute;left:221.32px;top:437.75px" class="cls_003"><span class="cls_003">(y, z) </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:126.00px;top:459.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x-y) is divisible by 6 & (y-z) is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:480.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x-y)+(y-z) is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:501.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x-z) is divisible by 6</span></div>
+<div style="position:absolute;left:126.00px;top:522.50px" class="cls_004"><span class="cls_004">⇒</span><span class="cls_003"> (x-z) </span><span class="cls_004">∈</span><span class="cls_003"> R</span></div>
+<div style="position:absolute;left:126.00px;top:543.50px" class="cls_004"><span class="cls_004"id="section27">⇒</span><span class="cls_003"> R is transitive</span></div>
+<div style="position:absolute;left:72.00px;top:586.25px" class="cls_022"><span class="cls_022">Partial Order Relation -</span></div>
+<div style="position:absolute;left:72.00px;top:607.25px" class="cls_003"><span class="cls_003">A relation R on a set A is called partial order if it is reflexive,</span></div>
+<div style="position:absolute;left:72.00px;top:628.25px" class="cls_003"><span class="cls_003">antisymmetric and transitive, i.e.</span></div>
+<div style="position:absolute;left:90.00px;top:649.25px" class="cls_003"><span class="cls_003">1. (a, a) </span><span class="cls_004">∈</span><span class="cls_003"> R for all a </span><span class="cls_004">∈</span><span class="cls_003"> A</span></div>
+<div style="position:absolute;left:288.00px;top:649.25px" class="cls_003"><span class="cls_003">---Reflexive</span></div>
+<div style="position:absolute;left:90.00px;top:671.00px" class="cls_003"><span class="cls_003">2. (a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R and (b, a) </span><span class="cls_004">∈</span><span class="cls_003"> R </span><span class="cls_004">⇒</span><span class="cls_003"> a = b ----Antisymmetric</span></div>
+<div style="position:absolute;left:90.00px;top:692.00px" class="cls_003"><span class="cls_003">3. (a, b)</span></div>
+<div style="position:absolute;left:154.22px;top:692.00px" class="cls_004"><span class="cls_004">∈</span><span class="cls_003"> R and (b, c) </span><span class="cls_004">∈</span><span class="cls_003"> R </span><span class="cls_004">⇒</span><span class="cls_003"> (a, c) </span><span class="cls_004">∈</span><span class="cls_003"> R ,  -----Transitive</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7930px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:70.25px" class="cls_003"><span class="cls_003">A set A together with a partial order R is called a partial order set</span></div>
+<div style="position:absolute;left:72.00px;top:91.25px" class="cls_003"><span class="cls_003">and is denoted by (A, R)</span></div>
+<div style="position:absolute;left:72.00px;top:134.00px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:155.00px" class="cls_003"><span class="cls_003">Show ≥ relation is a partial ordering on z, the set of integers.</span></div>
+<div style="position:absolute;left:72.00px;top:197.00px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<div style="position:absolute;left:72.00px;top:218.75px" class="cls_011"><span class="cls_011">Reflexive -</span><span class="cls_003"> since a ≥ a </span><span class="cls_004">∀</span><span class="cls_003"> integer a so greater therefore equal to is</span></div>
+<div style="position:absolute;left:72.00px;top:239.75px" class="cls_003"><span class="cls_003">reflexive</span></div>
+<div style="position:absolute;left:72.00px;top:281.75px" class="cls_011"><span class="cls_011">Anti - symmetric - </span><span class="cls_003">since a ≥ b and b ≥ a </span><span class="cls_004">⇒</span><span class="cls_003"> a = b</span></div>
+<div style="position:absolute;left:72.00px;top:303.50px" class="cls_003"><span class="cls_003">Therefore ≥ is anti - symmetric.</span></div>
+<div style="position:absolute;left:72.00px;top:345.50px" class="cls_011"><span class="cls_011">Transitive -  </span><span class="cls_003">since a ≥ b and b ≥ c </span><span class="cls_004">⇒</span><span class="cls_003"> a ≥ c</span></div>
+<div style="position:absolute;left:72.00px;top:366.50px" class="cls_003"><span class="cls_003">Therefore ≥ is transitive</span></div>
+<div style="position:absolute;left:72.00px;top:409.25px" class="cls_003"><span class="cls_003"id="section6">Hence ≥ is a partial order on z.</span></div>
+<div style="position:absolute;left:72.00px;top:451.25px" class="cls_022"><span class="cls_022">Composition of Relations -</span></div>
+<div style="position:absolute;left:72.00px;top:472.25px" class="cls_003"><span class="cls_003">If R </span><span class="cls_004">⊆</span><span class="cls_003"> A × B  &  S </span><span class="cls_004">⊆</span><span class="cls_003"> B × C</span></div>
+<div style="position:absolute;left:72.00px;top:493.25px" class="cls_003"><span class="cls_003">Then composite relation of two relations R and S is a relation from</span></div>
+<div style="position:absolute;left:72.00px;top:515.00px" class="cls_003"><span class="cls_003">A to C {SoR </span><span class="cls_004">⊆</span><span class="cls_003"> A × C} and denoted by SoR also</span></div>
+<div style="position:absolute;left:99.00px;top:536.00px" class="cls_003"><span class="cls_003">SoR = { (a, C) : </span><span class="cls_004">∃</span><span class="cls_003"> an element b </span><span class="cls_004">∈</span><span class="cls_003"> B show that (a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R }</span></div>
+<div style="position:absolute;left:153.00px;top:557.00px" class="cls_003"><span class="cls_003">And (b, c) </span><span class="cls_004">∈</span><span class="cls_003"> S, where a←A, c←C</span></div>
+<div style="position:absolute;left:72.00px;top:578.00px" class="cls_003"><span class="cls_003">Hence we can say that</span></div>
+<div style="position:absolute;left:126.00px;top:599.00px" class="cls_003"><span class="cls_003">(a, b) </span><span class="cls_004">∈</span><span class="cls_003"> R , (b, c) </span><span class="cls_004">∈</span><span class="cls_003"> S </span><span class="cls_004">⇒</span><span class="cls_003"> (a, c)←SoR</span></div>
+<div style="position:absolute;left:99.00px;top:621.30px" class="cls_003"><span class="cls_003">&     RoR = R</span><span class="cls_009"><sup>2</sup></span></div>
+<div style="position:absolute;left:144.00px;top:657.30px" class="cls_003"><span class="cls_003">R</span><span class="cls_009"><sup>2</sup></span><span class="cls_003">oR = R</span><span class="cls_009"><sup>3</sup></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8536px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:144.00px;top:71.55px" class="cls_003"><span class="cls_003">RoRoR = R</span><span class="cls_009"><sup>3</sup></span></div>
+<div style="position:absolute;left:72.00px;top:127.25px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:148.25px" class="cls_003"><span class="cls_003">Let A = {1, 2, 3}, B = {p, q, r}, & c = {x, y, z}</span></div>
+<div style="position:absolute;left:72.00px;top:169.25px" class="cls_003"><span class="cls_003">And let R = {(1, p), (1, r), (2, q), (3, q)}</span></div>
+<div style="position:absolute;left:72.00px;top:191.00px" class="cls_003"><span class="cls_003">&</span></div>
+<div style="position:absolute;left:144.00px;top:191.00px" class="cls_003"><span class="cls_003">S = {(p, y), (q, x), (r, z)}</span></div>
+<div style="position:absolute;left:72.00px;top:212.00px" class="cls_003"><span class="cls_003">Compute SoR.</span></div>
+<div style="position:absolute;left:72.00px;top:233.00px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_6 {
+            width: 920px;
+    position: absolute;
+    top: 147px;
+    left: -140px;
+}
+	.stu{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.sti{fill:none;stroke:#000000;stroke-width:0.75px;stroke-miterlimit:10;}
+	.sto{fill:none;stroke:#000000;stroke-width:0.5px;stroke-miterlimit:10;}
+    .stp {
+    font-family: cursive;
+}
+	.stl{font-size:26.9484px;}
+	.st5{font-size:28.4366px;}
+	.stk{font-size:31.4398px;}
+	.stj{font-size:27.7591px;}
+</style>
+<g>
+	<ellipse class="stu" cx="707.4" cy="443.3" rx="42.3" ry="105.2"></ellipse>
+	<ellipse class="stu" cx="951.7" cy="440.9" rx="42.3" ry="105.2"></ellipse>
+	<ellipse class="stu" cx="1194.3" cy="440.9" rx="42.3" ry="105.2"></ellipse>
+	<path class="stu" d="M703.3,352.6c2.1-2.9,41.9-56.3,109.7-54.2c54.9,1.8,104.1,39.1,118.6,92.1"></path>
+	<path class="stu" d="M720.5,396.5c19.7-3.4,61.2-7.7,109.3,9c52.9,18.3,84.5,52,97.3,67.4"></path>
+	<path class="stu" d="M721.3,478.1l205.9-36.7c-68.4-1.5-136.7-3-205.1-4.5"></path>
+	<path class="stu" d="M966.1,398c23.9-4,61.5-7.3,106.3,1.5c49.2,9.6,85.3,29.6,106.3,43.4"></path>
+	<path class="stu" d="M969,442.9c24.6,4.2,62.6,7.8,107.8,0c43.6-7.5,77.3-22.6,98.8-34.4"></path>
+	<path class="stu" d="M967.6,483.3c68.4-1,136.7-2,205.1-3"></path>
+	<path class="sti" d="M738.5,592.6c4.7,7.6,75.3,116.5,208.1,118.3c90.4,1.2,174.9-47.8,220.1-127.3"></path>
+	<path class="sto" d="M528.9,634.5c9.8,38.1,44.6,64.8,83.8,64.4c39.2-0.4,73.3-27.7,82.3-65.9"></path>
+	<path class="sto" d="M680.1,615.1"></path>
+	<path class="sto" d="M626.2,615.1"></path>
+	<g>
+		<line class="sto" x1="539.3" y1="616" x2="585.9" y2="615.6"></line>
+		<polygon points="595.7,615.5 590.1,619.1 584.5,622.7 584.2,616 583.9,609.3 589.8,612.4 		"></polygon>
+	</g>
+	<line class="sto" x1="630.6" y1="616.9" x2="677.2" y2="616.5"></line>
+	<polygon points="687.1,616.4 681.4,619.9 675.8,623.5 675.5,616.8 675.2,610.2 681.1,613.3 	"></polygon>
+	<text transform="matrix(1 0 0 1 520.5562 623.3135)" class="stp stl">3</text>
+	<text transform="matrix(0.9477 0 0 1 603.3003 623.8174)" class="stp stl">q</text>
+	<text transform="matrix(1 0 0 1 691.6348 622.5371)" class="stp stl">x</text>
+	<polygon points="700.5,638.1 694.1,636.4 687.6,634.7 692.4,629.9 697.1,625.2 698.8,631.7 	"></polygon>
+	<polygon points="1166.9,603 1157.9,596.9 1148.9,590.8 1158.6,586.1 1168.4,581.4 1167.6,592.2 	"></polygon>
+	<text transform="matrix(1 0 0 1 1189.0352 573.5879)" class="stp stl">C</text>
+	<text transform="matrix(1 0 0 1 1189.4395 408.2344)"><tspan x="0" y="0" class="stp stk">x</tspan><tspan x="0" y="40.4" class="stp stk">y</tspan><tspan x="0" y="80.8" class="stp stk">z</tspan></text>
+	<text transform="matrix(1 0 0 1 943.9077 408.2344)"><tspan x="0" y="0" class="stp stk">p</tspan><tspan x="0" y="40.4" class="stp stk">q</tspan><tspan x="0" y="80.8" class="stp stk">r</tspan></text>
+	<text transform="matrix(1 0 0 1 697.6582 409.7324)"><tspan x="0" y="0" class="stp stk">1</tspan><tspan x="0" y="40.4" class="stp stk">2</tspan><tspan x="0" y="80.8" class="stp stk">3</tspan></text>
+	<polygon points="1168.5,488.7 1168,480.3 1167.6,471.9 1175.1,475.7 1182.6,479.5 1175.5,484.1 	"></polygon>
+	<polygon points="1159.3,440.3 1162.3,433.4 1165.4,426.6 1169.8,432.7 1174.3,438.7 1166.8,439.5 	"></polygon>
+	<polygon points="1169.7,419.6 1166,413.1 1162.2,406.5 1169.7,406.5 1177.3,406.5 1173.5,413.1 	"></polygon>
+	<polygon points="922.6,388.3 929,384.5 935.5,380.6 935.6,388.1 935.7,395.6 929.1,392 	"></polygon>
+	<polygon points="922.6,448.6 922.1,441.1 921.6,433.6 928.4,436.9 935.1,440.2 928.9,444.4 	"></polygon>
+	<polygon points="915.6,472.7 920.8,467.2 925.9,461.7 928.1,468.9 930.3,476.1 923,474.4 	"></polygon>
+	<text transform="matrix(1 0 0 1 940.7046 575.3496)" class="stp stl">B</text>
+	<text transform="matrix(1 0 0 1 694.3145 573.7715)" class="stp stl">A</text>
+	<text transform="matrix(1 0 0 1 809.5981 282.9004)" class="stp stl">R</text>
+	<text transform="matrix(1 0 0 1 1057.2598 324.6084)" class="stp stl">S</text>
+	<text transform="matrix(1 0 0 1 923.1567 699.4048)" class="stp stj">SoR</text>
+</g>
+</svg>
+</div>
+      <div style="position:absolute;left:50%;margin-left:-306px;top:8800px;width:612px;height:792px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:269.00px" class="cls_003"><span class="cls_003">SoR = {(1, y), (1, z), (2, x), (3, x)}</span></div>
+<div style="position:absolute;left:191.99px;top:290.00px" class="cls_011"><span class="cls_011">or</span></div>
+<div style="position:absolute;left:72.00px;top:311.00px" class="cls_003"><span class="cls_003">(1, p) </span><span class="cls_004">∈</span><span class="cls_003"> R and (p, y) </span><span class="cls_004">∈</span><span class="cls_003"> S  </span><span class="cls_004">⇒</span><span class="cls_003"> (1, y) </span><span class="cls_004">∈</span><span class="cls_003"> SoR</span></div>
+<div style="position:absolute;left:72.00px;top:332.00px" class="cls_003"><span class="cls_003">(1, r) </span><span class="cls_004">∈</span><span class="cls_003"> R and (r, z) </span><span class="cls_004">∈</span><span class="cls_003"> S  </span><span class="cls_004">⇒</span><span class="cls_003"> (1, z) </span><span class="cls_004">∈</span><span class="cls_003"> SoR</span></div>
+<div style="position:absolute;left:72.00px;top:353.75px" class="cls_003"><span class="cls_003">(2, q) </span><span class="cls_004">∈</span><span class="cls_003"> R and (q, x) </span><span class="cls_004">∈</span><span class="cls_003"> S  </span><span class="cls_004">⇒</span><span class="cls_003"> (2, x) </span><span class="cls_004">∈</span><span class="cls_003"> SoR</span></div>
+<div style="position:absolute;left:72.00px;top:374.75px" class="cls_003"><span class="cls_003"id="section7">(3, q) </span><span class="cls_004">∈</span><span class="cls_003"> R and (q, x) </span><span class="cls_004">∈</span><span class="cls_003"> S  </span><span class="cls_004">⇒</span><span class="cls_003"> (3, x) </span><span class="cls_004">∈</span><span class="cls_003"> SoR</span></div>
+<div style="position:absolute;left:72.00px;top:437.75px" class="cls_022"><span class="cls_022">Matrix representation of relation -</span></div>
+<div style="position:absolute;left:72.00px;top:470.00px" class="cls_003"><span class="cls_003">If R </span><span class="cls_004">⊆</span><span class="cls_003"> A × B and A = { a</span></div>
+<div style="position:absolute;left:277.96px;top:470.00px" class="cls_003"><span class="cls_003">......................., a</span></div>
+<div style="position:absolute;left:240.05px;top:470.00px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">, a</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">,</span></div>
+<div style="position:absolute;left:399.74px;top:470.00px" class="cls_009"><span class="cls_009"><sub>m</sub></span><span class="cls_003"> }</span></div>
+<div style="position:absolute;left:72.00px;top:506.00px" class="cls_003"><span class="cls_003">&  B = {b</span></div>
+<div style="position:absolute;left:223.83px;top:506.00px" class="cls_003"><span class="cls_003">, b</span></div>
+<div style="position:absolute;left:130.7px;top:506.00px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">, b</span><span class="cls_009"><sub>2</sub></span><span class="cls_003">,.............</span></div>
+<div style="position:absolute;left:241.61px;top:506.00px" class="cls_009"><span class="cls_009">n</span><span class="cls_003">}</span></div>
+<div style="position:absolute;left:72.00px;top:530.75px" class="cls_003"><span class="cls_003">Then R can be represented by m, n matrix defined as</span></div>
+<div style="position:absolute;left:72.00px;top:586.75px" class="cls_003"><span class="cls_003">M<sub>R</sub> = { m<sub>ij</sub> } = </span></div>
+<div style="color:dimgrey; font-size: xxx-large; position:absolute;left:170.00px;top:558.75px"><span>{</span></div>
+<div style="position:absolute;left: 189px;top: 574.75px;" class="cls_003"><span class="cls_003">1, if(a, b) ∈ R</span></div>
+<div style="position:absolute;left: 189px;top: 600.75px;" class="cls_003"><span class="cls_003">0, if(a, b) ∉ R</span></div>
+      </div>
+                <div style="position:absolute;left:50%;margin-left:-306px;top:8888px;width:612px;height:1000px;border-style:none;overflow:hidden">
+          <div style="position:absolute;left:72.00px;top:562.25px" class="cls_003"><span class="cls_003">The matrix M</span></div>
+<div style="position:absolute;left:165.32px;top:562.25px" class="cls_009"><span class="cls_009"><sub>R</sub></span><span class="cls_003"> is called the matrix of R.</span></div>
+<div style="position:absolute;left:72.00px;top:608.75px" class="cls_022"><span class="cls_022">Example -</span></div>
+<div style="position:absolute;left:72.00px;top:629.75px" class="cls_003"><span class="cls_003">Let R be the relation from the set A = {1, 3, 4} on itself and</span></div>
+<div style="position:absolute;left:72.00px;top:650.75px" class="cls_003"><span class="cls_003">defined by R = {(1, 1), (1, 3), (3, 3), (4, 4)}, then find the relation</span></div>
+<div style="position:absolute;left:72.00px;top:671.75px" class="cls_003"><span class="cls_003">matrix.</span></div>
+<div style="position:absolute;left:72.00px;top:693.50px" class="cls_022"><span class="cls_022">Solution -</span></div>
+<svg version="1.1" id="Layer_9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_9 {
+    position: absolute;
+    top: 611px;
+    width: 787px;
+    left: -35px;
+}
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{font-family:'ArialMT';}
+	.st2{font-size:38.3803px;}
+	.st3{letter-spacing:27px;}
+	.st4{font-size:37.5478px;}
+	.st5{font-size:36.2577px;}
+text.st1.st2 {
+    color: dimgray;
+}
+</style>
+<g>
+	<g>
+		<g>
+			<line class="st0" x1="542.9" y1="364.9" x2="542.9" y2="560"/>
+		</g>
+		<g>
+			<line class="st0" x1="558.9" y1="363.3" x2="541.3" y2="363.3"/>
+		</g>
+		<g>
+			<line class="st0" x1="560.4" y1="558.7" x2="542.8" y2="558.7"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st0" x1="834.6" y1="556.9" x2="834.6" y2="361.8"/>
+		</g>
+		<g>
+			<line class="st0" x1="818.6" y1="558.5" x2="836.2" y2="558.5"/>
+		</g>
+		<g>
+			<line class="st0" x1="817.1" y1="363.1" x2="834.7" y2="363.1"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 569.8701 391.5894)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 601.8413 404.3701)" class="st1 st2">11</text>
+	<text transform="matrix(1 0 0 1 626.73 391.5894)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 665.1099 391.5894)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 697.0811 404.3701)" class="st1 st2">12</text>
+	<text transform="matrix(1 0 0 1 721.9697 391.5894)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 760.3501 391.5894)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 792.3213 404.3701)" class="st1 st2">13</text>
+	<text transform="matrix(1 0 0 1 565.4551 467.0547)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 597.4263 479.8354)" class="st1 st2">21</text>
+	<text transform="matrix(1 0 0 1 622.3149 467.0547)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 660.6948 467.0547)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 692.666 479.8354)" class="st1 st2">22</text>
+	<text transform="matrix(1 0 0 1 717.5547 467.0547)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 755.9351 467.0547)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 787.9063 479.8354)" class="st1 st2">23</text>
+	<text transform="matrix(1 0 0 1 568.6553 537.439)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 600.6265 550.2197)" class="st1 st2">31</text>
+	<text transform="matrix(1 0 0 1 625.5151 537.439)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 663.895 537.439)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 695.8662 550.2197)" class="st1 st2">32</text>
+	<text transform="matrix(1 0 0 1 720.7549 537.439)" class="st1 st2 st3"> </text>
+	<text transform="matrix(1 0 0 1 759.1353 537.439)" class="st1 st2">m</text>
+	<text transform="matrix(0.583 0 0 0.583 791.1064 550.2197)" class="st1 st2">33</text>
+	<text transform="matrix(0.5959 0 0 0.583 512.5278 392.3184)"><tspan x="0" y="0" class="st1 st4">1</tspan><tspan x="0" y="124" class="st1 st4">3</tspan><tspan x="0" y="248" class="st1 st4">4</tspan></text>
+	<text transform="matrix(0.583 0 0 0.583 580.5269 344.4077)" class="st1 st2">1</text>
+	<text transform="matrix(1 0 0 1 275.834 463.8916)" class="st1 st2">M </text>
+	<text transform="matrix(0.583 0 0 0.583 319.6963 476.6724)" class="st1 st2">R</text>
+	<text transform="matrix(1 0 0 1 395.7861 463.4458)" class="st1 st2">=</text>
+	<g>
+		<g>
+			<line class="st0" x1="1062.6" y1="364.3" x2="1062.6" y2="559.4"/>
+		</g>
+		<g>
+			<line class="st0" x1="1078.5" y1="362.7" x2="1061" y2="362.7"/>
+		</g>
+		<g>
+			<line class="st0" x1="1080" y1="558.2" x2="1062.4" y2="558.2"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st0" x1="1354.2" y1="556.4" x2="1354.2" y2="361.3"/>
+		</g>
+		<g>
+			<line class="st0" x1="1338.2" y1="558" x2="1355.8" y2="558"/>
+		</g>
+		<g>
+			<line class="st0" x1="1336.8" y1="362.6" x2="1354.3" y2="362.6"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 1095.9023 407.0439)" class="st1 st2">1</text>
+	<text transform="matrix(0.6171 0 0 0.583 1032.1777 397.522)"><tspan x="0" y="0" class="st1 st5">1</tspan><tspan x="0" y="119.7" class="st1 st5">3</tspan><tspan x="0" y="239.4" class="st1 st5">4</tspan></text>
+	<text transform="matrix(1 0 0 1 915.4302 462.9038)" class="st1 st2">=</text>
+	<text transform="matrix(0.583 0 0 0.583 672.4697 344.0024)" class="st1 st2">3</text>
+	<text transform="matrix(0.583 0 0 0.583 768.4175 344.0024)" class="st1 st2">4</text>
+	<text transform="matrix(0.583 0 0 0.583 1099.8428 344.2012)" class="st1 st2">1</text>
+	<text transform="matrix(0.583 0 0 0.583 1191.7959 343.7759)" class="st1 st2">3</text>
+	<text transform="matrix(0.583 0 0 0.583 1287.7656 343.7759)" class="st1 st2">4</text>
+	<text transform="matrix(1 0 0 1 1185.4897 406.6297)" class="st1 st2">1</text>
+	<text transform="matrix(1 0 0 1 1284.4897 406.6297)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 1096.1963 466.8367)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 1185.7837 466.4224)" class="st1 st2">1</text>
+	<text transform="matrix(1 0 0 1 1284.7837 466.4224)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 1096.1963 537.8367)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 1185.7837 537.4224)" class="st1 st2">0</text>
+	<text transform="matrix(1 0 0 1 1284.7837 537.4224)" class="st1 st2">1</text>
+</g>
+</svg>
+
+                </div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9770px;width:612px;height:444px;border-style:none;overflow:hidden">
+<div style="position:absolute;left:72.00px;top:0.50px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">R</span><span class="cls_009"><sub>1</sub></span><span class="cls_003"> = m</span><span class="cls_009"><sub>11</sub></span><span class="cls_003"> = (1, 1) = 1</span></div>
+<div style="position:absolute;left:72.00px;top:36.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">R</span><span class="cls_009"><sub>2</sub></span><span class="cls_003"> = m</span><span class="cls_009"><sub>12</sub></span><span class="cls_003"> = (1, 3) = 1</span></div>
+<div style="position:absolute;left:72.00px;top:74.75px" class="cls_009"><span class="cls_009"><sub>1</sub></span><span class="cls_003">R</span><span class="cls_009"><sub>3</sub></span><span class="cls_003"> = m</span><span class="cls_009"><sub>13</sub></span><span class="cls_003"> = (1, 4) = 0  { by definition since (1, 4) </span><span class="cls_004">∈</span><span class="cls_003"> R }</span></div>
+<div style="position:absolute;left:108.00px;top:115.00px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>21</sub></span><span class="cls_003"> = (3, 1) </span><span class="cls_004">∉</span><span class="cls_003"> R, = 0</span></div>
+<div style="position:absolute;left:108.00px;top:156.00px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>22</sub></span><span class="cls_003"> = (3, 3) </span><span class="cls_004">∉</span><span class="cls_003"> R, Hence = 1</span></div>
+<div style="position:absolute;left:108.00px;top:197.00px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>23</sub></span><span class="cls_003"> = (3, 4) </span><span class="cls_004">∉</span><span class="cls_003"> R, Hence = 0</span></div>
+<div style="position:absolute;left:108.00px;top:238.25px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>31</sub></span><span class="cls_003"> = (4, 1) </span><span class="cls_004">∉</span><span class="cls_003"> R, = 0</span></div>
+<div style="position:absolute;left:108.00px;top:282.25px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>32</sub></span><span class="cls_003"> = (4, 3) </span><span class="cls_004">∉</span><span class="cls_003"> R, = 0</span></div>
+<div style="position:absolute;left:108.00px;top:325.50px" class="cls_003"><span class="cls_003">m</span><span class="cls_009"><sub>33</sub></span><span class="cls_003"> = (4, 4) </span><span class="cls_004">∉</span><span class="cls_003"> R, = 1</span></div>
+</div>
+
+  </div>
+</div>
+<div style="left: 948px;
+    position: fixed;
+    top: -42px;
+    align-content: center;
+    font-family: fantasy;
+    font: icon;">
+<svg version="1.1" id="Layer_11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+    svg#Layer_11 {
+    width: fit-content;
+}
+	.st9{fill:#A6D9EA;}
+	.st99{fill:#451C18;}
+	.st999{fill:#E2B693;}
+	.st9999{fill:#FF393E;}
+	.st99999{fill:#FFFFFF;}
+</style>
+<image style="display:none;overflow:visible;" width="992" height="562" xlink:href="C17B926E.jpg"  transform="matrix(1 0 0 1 464 259)">
+</image>
+<g>
+	<path class="st9" d="M1004.5,706.5c-16.5,312.2-449.7,296.7-459,0C562,394.4,995.2,409.8,1004.5,706.5z"/>
+	<path class="st99" d="M771.8,575.8c2-0.1-0.2,0,19.1,0c8.5,0,15.3,0.2,22.3,3.2c9.6,4,6.6,10.2,19.1,19.1c5.7,4,8.7,4.7,12.8,9.6
+		c3.7,4.6,5.2,9.1,6.4,12.8c3.4,10.8,0.6,13.3,3.2,25.5c1.1,5.2,1.1,2.3,6.4,19.1c2.9,9.2,3.5,12,6.4,15.9c4.2,5.7,6.5,4.6,9.6,9.6
+		c3.2,5.1,1.3,8.2,3.2,19.1c1.5,9,2.9,8,3.2,12.8c1,15.4-13.1,22.6-9.6,31.9c1.6,4.3,4.8,3.3,9.6,9.6c4.6,5.9,5.5,12.1,6.4,19.1
+		c1.4,10.6,3.5,26.2-6.4,38.3c-4.8,5.8-10.4,8.5-12.8,9.6c-75.1,34.5-162.6,15.9-162.6,15.9c-16.8-3.6-29.3-7.9-38.3-19.1
+		c-7.7-9.7-14.9-27.1-9.6-41.4c2.4-6.3,5.7-8,9.6-19.1c3.6-10.2,3.4-16.3,3.2-19.1c-0.5-5.9-2.2-10.2-3.2-12.8
+		c-3.4-8.4-6.4-9.3-9.6-15.9c-4.6-9.7-3.6-19.2-3.2-22.3c1.3-10.3,6.1-17.4,9.6-22.3c8.3-11.9,12.8-10,19.1-19.1
+		c7.2-10.3,2.7-14.5,9.6-35.1c4.1-12.3,7.3-21.5,15.9-28.7c5.2-4.3,10.9-6.1,22.3-9.6C750.2,577.1,763.9,576.3,771.8,575.8z"/>
+	<path class="st999" d="M771.8,633.2c-1.1-0.2-2,2.6-6.4,9.6c-1.2,1.9-0.5,0.6-6.4,9.6c-5.9,8.9-5.6,8.7-6.4,9.6
+		c-2.6,3.1-4.4,3.4-12.8,9.6c-12,8.9-13.6,8.8-15.9,12.8c-3.2,5.4-3.2,11-3.2,12.8c0,4.6,1.3,8,3.2,12.8c2.9,7.5,4.8,7.7,6.4,12.8
+		c1.9,6.4,0.8,12,0,15.9c-2.4,11.7-7.8,13.3-6.4,19.1c1.3,5.7,7.8,9.7,12.8,12.8c6,3.7,8,3.5,9.6,6.4c1.6,3,0.5,5.4,0,12.8
+		c-0.5,7,0.2,9.3,0,12.8c-0.7,14.4-14.8,18.5-15.9,28.7c-1.5,13.8,21.7,29.5,41.4,35.1c9.5,2.7,37.1,10.5,51-6.4
+		c12.3-14.9,7.8-41.7-3.2-47.8c-6.1-3.4-14.1-0.2-19.1-6.4c-2.3-2.9-2.9-6.3-3.2-9.6c-0.2-1.9-0.8-9.1,3.2-15.9
+		c4-6.9,8.2-5.6,15.9-12.8c9.3-8.5,12.8-22.3,12.8-22.3c0,0-3.3-10.3-6.4-19.1c-6.1-17.8-6.5-17-6.4-19.1c0.8-9.8,9.1-11.5,9.6-22.3
+		c0.3-6.2-2.2-11-3.2-12.8c-0.6-1.1-5.9-10.4-15.9-12.8c-6.9-1.6-8.1,1.5-15.9,0c-2-0.4-11.5-2.3-15.9-9.6
+		C770.7,642,773.6,633.6,771.8,633.2z"/>
+	<path class="st9999" d="M759.1,910.5c-1.3-38.3-14.2-43.2-15.9-76.5c-0.7-13.1-0.5-22.6-6.4-25.5c-3.5-1.7-6.5,0.3-22.3,6.4
+		c-18,6.9-17.9,5.7-25.5,9.6c-9.7,5-16.6,8.5-22.3,15.9c-2.1,2.7-4.7,6.8-9.6,25.5c-4.3,16.3-6.5,24.5-6.4,28.7
+		c0,2.4,0.5,4.8,1.1,7.2c2.3,1.1,4.1,2.8,5.5,4.8c12.7,9.6,33.7,15.8,48.7,19.2c12.9,3,25.9,5.7,39,8.4c0.8,0,1.7-0.1,2.5-0.1
+		c1.8-0.1,3.5,0.1,5,0.6c0.7-0.1,1.4-0.2,2.1-0.3c0,0,0,0,0.1,0c0.4-0.5,0.8-1,1.2-1.6C757.8,929.6,759.5,925.1,759.1,910.5z"/>
+	<path class="st9999" d="M797.3,936c-13.3-5.9-18.5-42.4-6.4-70.1c6.8-15.5,17.5-24.4,15.9-41.4c-0.6-7.2-3.2-13.2,0-15.9
+		c2.9-2.5,7.7,0.1,25.5,6.4c17.1,6,19.1,5.8,25.5,9.6c3.6,2.1,9.8,6.2,15.9,12.8c13.6,14.5,18,31.3,19.1,38.3
+		c2.5,14.9,6.3,20.6,3.2,25.5c-1.8,2.8-4.9,5.2-6.4,6.4c-3.8,2.9-6.5,3.8-12.8,6.4c-12.5,5.2-12.5,6-22.3,9.6
+		c-4.3,1.5-7.5,2.5-9.6,3.2c-5.2,1.6-13.7,4-25.5,6.4C806,935.5,799.2,936.9,797.3,936z"/>
+	<path class="st99999" d="M746.3,853.2c18.5-1,36.9-2.1,55.4-3.1l-4.4,86h-41.4C752.7,908.4,749.5,880.8,746.3,853.2z"/>
+</g>
+</svg>
+    <div style="font: small-caption;
+    color: lightgrey;" class="gt">&emsp;&emsp; Shraddha Tiwari -BBDNIIT Lucknow</div>
+
+    <div>Discrete Structure & Theory of Logic<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Module-1</div>
+<div></div>
+</div>
+</body>
+</html>
